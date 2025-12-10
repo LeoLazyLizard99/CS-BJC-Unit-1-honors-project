@@ -3,11 +3,15 @@
 #include <time.h>
 
 
-char* who[5] = {"glumbus", "dumbus", "rungus", "clungus", "a 2013 subaru impreza"};
-char* does[5] = {"is killing", "is driving", "is cooking in", "is gumping", "is eating"};
+char* noun[5] = {"elephant", "pizza", "girl", "boy", "power supply"};
+char* verb[5] = {"runs", "jumps", "sits down", "climbs", "is eating"};
+char* adjective[5] = {"quick", "lazy", "happy", "sad", "angry"};
+char* adverb[5] = {"quickly", "lazily", "happily", "sadly", "angrily"};
+char* determiner[5] = {"the", "a", "one", "some", "any"};
+char* preposition[5] = {"to", "from", "over", "under", "on"};
 
 int main() {
-    printf("%s %s %s\n", who[rand()], does[rand()], who[(rand() + (rand() % 5)) % 5]);
+    printf("%s %s %s %s %s\n", noun[rand()], verb[rand()], preposition[rand()], determiner[rand()], noun[rand()]);
     return 0;
 }
 
